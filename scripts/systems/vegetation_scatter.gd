@@ -97,7 +97,7 @@ func _sample_points_in_polygon(ring: Array) -> Array:
 	var placed_positions: Array = []
 	var placements: Array = []
 	var attempts := 0
-	var max_attempts := max(target_count * 20, 50)
+	var max_attempts := maxi(target_count * 20, 50)
 
 	while placed_positions.size() < target_count and attempts < max_attempts:
 		attempts += 1

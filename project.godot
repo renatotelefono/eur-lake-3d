@@ -1,27 +1,28 @@
-; EUR Lake 3D — progetto Godot 4.x
-; Le azioni di input (WASD, salto, corsa) non sono definite qui a mano come
-; risorse InputEventKey (facile sbagliare la sintassi manualmente): vengono
-; invece registrate a runtime dall'autoload InputSetup, vedi
-; scripts/systems/input_setup.gd.
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
 
 config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
 config/name="EUR Lake 3D"
 config/description="Ricostruzione 3D esplorabile del Laghetto dell'EUR (Roma), generata da dati OpenStreetMap."
 run/main_scene="res://scenes/world/eur_world.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.7", "Forward Plus")
 
 [autoload]
 
 InputSetup="*res://scripts/systems/input_setup.gd"
 
-[physics]
-
-3d/default_gravity=9.8
-
 [rendering]
 
-renderer/rendering_method="forward_plus"
 environment/defaults/default_clear_color=Color(0.5, 0.6, 0.7, 1)

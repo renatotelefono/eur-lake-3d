@@ -7,18 +7,3042 @@
   "features": [
     {
       "type": "Feature",
-      "id": 5001,
+      "id": 228278475,
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -8.307,
-          -11.107
+          288.167,
+          -332.438
         ]
       },
       "properties": {
-        "osm_id": 5001,
-        "name": "Bar del Laghetto",
+        "osm_id": 228278475,
+        "name": "Ip",
+        "category": "fuel"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 229099311,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          277.024,
+          -193.578
+        ]
+      },
+      "properties": {
+        "osm_id": 229099311,
+        "name": "IP",
+        "category": "fuel"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 248743045,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.297,
+          -360.389
+        ]
+      },
+      "properties": {
+        "osm_id": 248743045,
+        "name": null,
+        "category": "atm"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 250889643,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.433,
+          -232.537
+        ]
+      },
+      "properties": {
+        "osm_id": 250889643,
+        "name": null,
+        "category": "drinking_water"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 560418226,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -248.811,
+          451.184
+        ]
+      },
+      "properties": {
+        "osm_id": 560418226,
+        "name": "Quattordicesimo Piano - Il Fungo",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 767941595,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          256.771,
+          -450.393
+        ]
+      },
+      "properties": {
+        "osm_id": 767941595,
+        "name": "Carabinieri Stazione EUR",
+        "category": "police"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1362032125,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.922,
+          -178.989
+        ]
+      },
+      "properties": {
+        "osm_id": 1362032125,
+        "name": null,
+        "category": "bicycle_parking"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1810015914,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          377.257,
+          -46.371
+        ]
+      },
+      "properties": {
+        "osm_id": 1810015914,
+        "name": null,
+        "category": "bicycle_parking"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1878039425,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -169.021,
+          -311.131
+        ]
+      },
+      "properties": {
+        "osm_id": 1878039425,
+        "name": "UGF Banca",
+        "category": "bank"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1878560891,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.064,
+          -195.317
+        ]
+      },
+      "properties": {
+        "osm_id": 1878560891,
+        "name": "Buddha Restaurant",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1924360503,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -21.457,
+          -161.574
+        ]
+      },
+      "properties": {
+        "osm_id": 1924360503,
+        "name": null,
+        "category": "parking_entrance"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1924360563,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -23.185,
+          -169.36
+        ]
+      },
+      "properties": {
+        "osm_id": 1924360563,
+        "name": null,
+        "category": "parking"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1924360595,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.423,
+          -173.98
+        ]
+      },
+      "properties": {
+        "osm_id": 1924360595,
+        "name": null,
+        "category": "parking_entrance"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1924361311,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -334.503,
+          -324.554
+        ]
+      },
+      "properties": {
+        "osm_id": 1924361311,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1924361338,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -390.192,
+          -337.663
+        ]
+      },
+      "properties": {
+        "osm_id": 1924361338,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1924361343,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -382.159,
+          -341.128
+        ]
+      },
+      "properties": {
+        "osm_id": 1924361343,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1942142174,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -484.811,
+          88.495
+        ]
+      },
+      "properties": {
+        "osm_id": 1942142174,
+        "name": null,
+        "category": "parking"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1942142325,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -455.258,
+          34.662
+        ]
+      },
+      "properties": {
+        "osm_id": 1942142325,
+        "name": null,
+        "category": "parking"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1942142340,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -489.833,
+          31.749
+        ]
+      },
+      "properties": {
+        "osm_id": 1942142340,
+        "name": null,
+        "category": "parking"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1942142352,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -456.845,
+          25.076
+        ]
+      },
+      "properties": {
+        "osm_id": 1942142352,
+        "name": null,
+        "category": "parking"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2022244355,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -253.38,
+          -478.605
+        ]
+      },
+      "properties": {
+        "osm_id": 2022244355,
+        "name": null,
+        "category": "taxi"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2401541363,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -283.759,
+          -462.057
+        ]
+      },
+      "properties": {
+        "osm_id": 2401541363,
+        "name": "Enel - stazione di ricarica",
+        "category": "charging_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2577720834,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          417.624,
+          1.487
+        ]
+      },
+      "properties": {
+        "osm_id": 2577720834,
+        "name": "EUR Fermi (MB)",
+        "category": "bus_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2683531122,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          216.829,
+          -254.442
+        ]
+      },
+      "properties": {
+        "osm_id": 2683531122,
+        "name": "Museo storico delle comunicazioni",
+        "category": "museum"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3590379202,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -184.071,
+          -412.128
+        ]
+      },
+      "properties": {
+        "osm_id": 3590379202,
+        "name": "Caff\u00e8 Tomeucci",
         "category": "cafe"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3590379214,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -219.54,
+          -439.319
+        ]
+      },
+      "properties": {
+        "osm_id": 3590379214,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3654669690,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.347,
+          -261.337
+        ]
+      },
+      "properties": {
+        "osm_id": 3654669690,
+        "name": "Ristorante Gattopardo",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3654669691,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.492,
+          -257.916
+        ]
+      },
+      "properties": {
+        "osm_id": 3654669691,
+        "name": "Caff\u00e8 Roma",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3654669692,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.89,
+          -283.44
+        ]
+      },
+      "properties": {
+        "osm_id": 3654669692,
+        "name": "Eur China",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3654669693,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -308.435,
+          -342.136
+        ]
+      },
+      "properties": {
+        "osm_id": 3654669693,
+        "name": "Conca D'oro",
+        "category": "bar"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3654669694,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -232.735,
+          -330.537
+        ]
+      },
+      "properties": {
+        "osm_id": 3654669694,
+        "name": "Gelarmony",
+        "category": "ice_cream"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3663816871,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -258.353,
+          -339.646
+        ]
+      },
+      "properties": {
+        "osm_id": 3663816871,
+        "name": "Spaten Lounge",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4058974398,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.969,
+          -306.398
+        ]
+      },
+      "properties": {
+        "osm_id": 4058974398,
+        "name": "Parafarmacia Farmacrimi",
+        "category": "pharmacy"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4107554191,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -250.173,
+          439.566
+        ]
+      },
+      "properties": {
+        "osm_id": 4107554191,
+        "name": "Piano Zero - Pizzeria Bistrot",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4246055234,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -224.267,
+          -426.024
+        ]
+      },
+      "properties": {
+        "osm_id": 4246055234,
+        "name": "UniCredit",
+        "category": "bank"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4246055235,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -156.717,
+          -400.342
+        ]
+      },
+      "properties": {
+        "osm_id": 4246055235,
+        "name": "Farmacia Imbesi",
+        "category": "pharmacy"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4501956493,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -498.166,
+          -79.033
+        ]
+      },
+      "properties": {
+        "osm_id": 4501956493,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4547647589,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -347.365,
+          415.793
+        ]
+      },
+      "properties": {
+        "osm_id": 4547647589,
+        "name": null,
+        "category": "drinking_water"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4566872268,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -134.897,
+          -291.116
+        ]
+      },
+      "properties": {
+        "osm_id": 4566872268,
+        "name": "Tiki Bar",
+        "category": "bar"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4566872270,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.015,
+          -275.576
+        ]
+      },
+      "properties": {
+        "osm_id": 4566872270,
+        "name": "Gelato Naturale",
+        "category": "cafe"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4566872271,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.408,
+          -268.368
+        ]
+      },
+      "properties": {
+        "osm_id": 4566872271,
+        "name": "Primo Italian Street Food",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4566872793,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -323.952,
+          -348.167
+        ]
+      },
+      "properties": {
+        "osm_id": 4566872793,
+        "name": "Pizzeria Kebab",
+        "category": "fast_food"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4566872794,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -337.65,
+          -353.944
+        ]
+      },
+      "properties": {
+        "osm_id": 4566872794,
+        "name": "Pani",
+        "category": "fast_food"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4566872795,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -348.789,
+          -358.054
+        ]
+      },
+      "properties": {
+        "osm_id": 4566872795,
+        "name": "Daruma",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4566872796,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -370.627,
+          -366.596
+        ]
+      },
+      "properties": {
+        "osm_id": 4566872796,
+        "name": "4,5 Bistrot",
+        "category": "fast_food"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4566872797,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -287.407,
+          -433.023
+        ]
+      },
+      "properties": {
+        "osm_id": 4566872797,
+        "name": "Il Gianfornaio",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4566872808,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -249.75,
+          -483.403
+        ]
+      },
+      "properties": {
+        "osm_id": 4566872808,
+        "name": "oTBReD",
+        "category": "fast_food"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5044675102,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -189.468,
+          448.942
+        ]
+      },
+      "properties": {
+        "osm_id": 5044675102,
+        "name": "Eurpark Adventure",
+        "category": "theme_park"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5101274225,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.867,
+          -392.244
+        ]
+      },
+      "properties": {
+        "osm_id": 5101274225,
+        "name": "Banca Popolare di Novara",
+        "category": "bank"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5150474561,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          215.214,
+          -88.204
+        ]
+      },
+      "properties": {
+        "osm_id": 5150474561,
+        "name": "Giuseppe Pella",
+        "category": "artwork"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5615836320,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.394,
+          -376.05
+        ]
+      },
+      "properties": {
+        "osm_id": 5615836320,
+        "name": "Dany's bar",
+        "category": "cafe"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5618211378,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -20.186,
+          -341.873
+        ]
+      },
+      "properties": {
+        "osm_id": 5618211378,
+        "name": "Black Diamond",
+        "category": "cafe"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5627795588,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.377,
+          -301.355
+        ]
+      },
+      "properties": {
+        "osm_id": 5627795588,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5627795589,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.041,
+          -287.871
+        ]
+      },
+      "properties": {
+        "osm_id": 5627795589,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5627795590,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.315,
+          -219.641
+        ]
+      },
+      "properties": {
+        "osm_id": 5627795590,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5638521412,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.967,
+          -412.236
+        ]
+      },
+      "properties": {
+        "osm_id": 5638521412,
+        "name": "Pizza Art",
+        "category": "restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5638521413,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.86,
+          -145.502
+        ]
+      },
+      "properties": {
+        "osm_id": 5638521413,
+        "name": null,
+        "category": "photo_booth"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5648370745,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.729,
+          -187.542
+        ]
+      },
+      "properties": {
+        "osm_id": 5648370745,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5648370746,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.337,
+          -341.651
+        ]
+      },
+      "properties": {
+        "osm_id": 5648370746,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5728136028,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.55,
+          86.59
+        ]
+      },
+      "properties": {
+        "osm_id": 5728136028,
+        "name": null,
+        "category": "drinking_water"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5769076528,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.012,
+          -389.922
+        ]
+      },
+      "properties": {
+        "osm_id": 5769076528,
+        "name": null,
+        "category": "recycling"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5769076529,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.55,
+          -301.855
+        ]
+      },
+      "properties": {
+        "osm_id": 5769076529,
+        "name": null,
+        "category": "recycling"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5769076531,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.988,
+          -471.803
+        ]
+      },
+      "properties": {
+        "osm_id": 5769076531,
+        "name": null,
+        "category": "recycling"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5777636259,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          89.656,
+          -348.86
+        ]
+      },
+      "properties": {
+        "osm_id": 5777636259,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5777636260,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          150.818,
+          -454.522
+        ]
+      },
+      "properties": {
+        "osm_id": 5777636260,
+        "name": null,
+        "category": "recycling"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5777636261,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.317,
+          -241.2
+        ]
+      },
+      "properties": {
+        "osm_id": 5777636261,
+        "name": null,
+        "category": "recycling"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5807940909,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -39.125,
+          -479.934
+        ]
+      },
+      "properties": {
+        "osm_id": 5807940909,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5807940910,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.936,
+          -391.977
+        ]
+      },
+      "properties": {
+        "osm_id": 5807940910,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5807940911,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.072,
+          -373.606
+        ]
+      },
+      "properties": {
+        "osm_id": 5807940911,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5807940912,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.232,
+          -469.282
+        ]
+      },
+      "properties": {
+        "osm_id": 5807940912,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5837801985,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.962,
+          -435.883
+        ]
+      },
+      "properties": {
+        "osm_id": 5837801985,
+        "name": "Marjani coffee roasters",
+        "category": "cafe"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5846238175,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.64,
+          -402.373
+        ]
+      },
+      "properties": {
+        "osm_id": 5846238175,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5846238176,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.764,
+          -427.421
+        ]
+      },
+      "properties": {
+        "osm_id": 5846238176,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5851835011,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          231.41,
+          -198.141
+        ]
+      },
+      "properties": {
+        "osm_id": 5851835011,
+        "name": "Esso",
+        "category": "fuel"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6465601548,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -141.9,
+          -249.254
+        ]
+      },
+      "properties": {
+        "osm_id": 6465601548,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6465601549,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -239.82,
+          -331.159
+        ]
+      },
+      "properties": {
+        "osm_id": 6465601549,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6465601550,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -223.391,
+          -281.166
+        ]
+      },
+      "properties": {
+        "osm_id": 6465601550,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6465601551,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -195.819,
+          -308.522
+        ]
+      },
+      "properties": {
+        "osm_id": 6465601551,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6480245029,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -434.945,
+          -4.512
+        ]
+      },
+      "properties": {
+        "osm_id": 6480245029,
+        "name": null,
+        "category": "telephone"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6820559483,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -495.716,
+          -74.256
+        ]
+      },
+      "properties": {
+        "osm_id": 6820559483,
+        "name": null,
+        "category": "telephone"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6820562590,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -491.271,
+          -81.942
+        ]
+      },
+      "properties": {
+        "osm_id": 6820562590,
+        "name": null,
+        "category": "recycling"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6857871338,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.508,
+          -370.63
+        ]
+      },
+      "properties": {
+        "osm_id": 6857871338,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6857871339,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.083,
+          -366.742
+        ]
+      },
+      "properties": {
+        "osm_id": 6857871339,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7116551797,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.164,
+          -233.903
+        ]
+      },
+      "properties": {
+        "osm_id": 7116551797,
+        "name": null,
+        "category": "charging_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7124091330,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.344,
+          -228.816
+        ]
+      },
+      "properties": {
+        "osm_id": 7124091330,
+        "name": null,
+        "category": "charging_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7682623105,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -141.016,
+          -14.44
+        ]
+      },
+      "properties": {
+        "osm_id": 7682623105,
+        "name": "Barcheria",
+        "category": "cafe"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195876694,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -373.215,
+          -122.886
+        ]
+      },
+      "properties": {
+        "osm_id": 8195876694,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195911613,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -311.004,
+          -97.893
+        ]
+      },
+      "properties": {
+        "osm_id": 8195911613,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195931984,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -41.919,
+          31.144
+        ]
+      },
+      "properties": {
+        "osm_id": 8195931984,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195931985,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -313.097,
+          -103.624
+        ]
+      },
+      "properties": {
+        "osm_id": 8195931985,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195952283,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -34.243,
+          34.365
+        ]
+      },
+      "properties": {
+        "osm_id": 8195952283,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195952284,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -364.625,
+          -129.239
+        ]
+      },
+      "properties": {
+        "osm_id": 8195952284,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195952715,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -360.165,
+          -127.106
+        ]
+      },
+      "properties": {
+        "osm_id": 8195952715,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195955412,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          65.347,
+          233.135
+        ]
+      },
+      "properties": {
+        "osm_id": 8195955412,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195955413,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -291.374,
+          -96.615
+        ]
+      },
+      "properties": {
+        "osm_id": 8195955413,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195955414,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -403.325,
+          -193.384
+        ]
+      },
+      "properties": {
+        "osm_id": 8195955414,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195955727,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -270.715,
+          -91.083
+        ]
+      },
+      "properties": {
+        "osm_id": 8195955727,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195960987,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -414.367,
+          -161.052
+        ]
+      },
+      "properties": {
+        "osm_id": 8195960987,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195964788,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -387.777,
+          -138.992
+        ]
+      },
+      "properties": {
+        "osm_id": 8195964788,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195965049,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -387.179,
+          -128.663
+        ]
+      },
+      "properties": {
+        "osm_id": 8195965049,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195965213,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.533,
+          247.119
+        ]
+      },
+      "properties": {
+        "osm_id": 8195965213,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195965510,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -383.317,
+          -117.289
+        ]
+      },
+      "properties": {
+        "osm_id": 8195965510,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195965799,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.887,
+          3.065
+        ]
+      },
+      "properties": {
+        "osm_id": 8195965799,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195967065,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -420.198,
+          -162.974
+        ]
+      },
+      "properties": {
+        "osm_id": 8195967065,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195967415,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -210.671,
+          -52.262
+        ]
+      },
+      "properties": {
+        "osm_id": 8195967415,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195968546,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -168.911,
+          -42.72
+        ]
+      },
+      "properties": {
+        "osm_id": 8195968546,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195971150,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -397.757,
+          -220.152
+        ]
+      },
+      "properties": {
+        "osm_id": 8195971150,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195971378,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -348.053,
+          -114.066
+        ]
+      },
+      "properties": {
+        "osm_id": 8195971378,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195971963,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.651,
+          11.728
+        ]
+      },
+      "properties": {
+        "osm_id": 8195971963,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195971964,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -249.091,
+          -88.294
+        ]
+      },
+      "properties": {
+        "osm_id": 8195971964,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195972754,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -234.247,
+          -67.579
+        ]
+      },
+      "properties": {
+        "osm_id": 8195972754,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195973417,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -164.467,
+          -40.631
+        ]
+      },
+      "properties": {
+        "osm_id": 8195973417,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8195973418,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -268.098,
+          -88.117
+        ]
+      },
+      "properties": {
+        "osm_id": 8195973418,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8789729247,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -362.578,
+          -47.025
+        ]
+      },
+      "properties": {
+        "osm_id": 8789729247,
+        "name": null,
+        "category": "fountain"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9502287317,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          361.579,
+          -73.826
+        ]
+      },
+      "properties": {
+        "osm_id": 9502287317,
+        "name": "Taxi Viale America 060609",
+        "category": "taxi"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9815461954,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          315.475,
+          -255.135
+        ]
+      },
+      "properties": {
+        "osm_id": 9815461954,
+        "name": null,
+        "category": "drinking_water"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981693,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.305,
+          -203.325
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981693,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981694,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.217,
+          -220.741
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981694,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981695,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -346.537,
+          -209.131
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981695,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981696,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -355.699,
+          -212.452
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981696,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981697,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -387.664,
+          -225.449
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981697,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981698,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -263.276,
+          -199.309
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981698,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981699,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -266.449,
+          -190.923
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981699,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981700,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -257.594,
+          -197.476
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981700,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981701,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -210.95,
+          -169.374
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981701,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981702,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -188.081,
+          -160.954
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981702,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981703,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -181.784,
+          -158.732
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981703,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981704,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -175.936,
+          -176.937
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981704,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981705,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -181.643,
+          -178.992
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981705,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981706,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -185.447,
+          -186.822
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981706,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981707,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -183.736,
+          -189.765
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981707,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981708,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -198.215,
+          -203.194
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981708,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981709,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -210.999,
+          -193.887
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981709,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981710,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -245.665,
+          -201.152
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981710,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981711,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -218.716,
+          -231.74
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981711,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10050981712,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -228.276,
+          -265.183
+        ]
+      },
+      "properties": {
+        "osm_id": 10050981712,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312753599,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.539,
+          -206.879
+        ]
+      },
+      "properties": {
+        "osm_id": 10312753599,
+        "name": "Museo Nazionale Preistorico Etnografico \"Luigi Pigorini\"",
+        "category": "information"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312753600,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.901,
+          -208.012
+        ]
+      },
+      "properties": {
+        "osm_id": 10312753600,
+        "name": "Museo Nazionale dell'Alto Medioevo",
+        "category": "information"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312753601,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.578,
+          -184.144
+        ]
+      },
+      "properties": {
+        "osm_id": 10312753601,
+        "name": "Museo Nazionale Preistorico Etnografico \"Luigi Pigorini\"",
+        "category": "information"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312753602,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.899,
+          -186.787
+        ]
+      },
+      "properties": {
+        "osm_id": 10312753602,
+        "name": "Museo Nazionale delle Arti e Tradizioni Popolari",
+        "category": "information"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835954,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          310.916,
+          156.446
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835954,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835955,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          356.134,
+          183.701
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835955,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835956,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          362.291,
+          189.732
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835956,
+        "name": "Orchidea",
+        "category": "artwork"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835957,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          334.834,
+          175.061
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835957,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835958,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          359.416,
+          184.511
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835958,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835959,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          384.256,
+          194.018
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835959,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835960,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          380.925,
+          192.896
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835960,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835961,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          408.788,
+          196.782
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835961,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835962,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          405.249,
+          196.782
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835962,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835963,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          412.842,
+          187.73
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835963,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835966,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          301.901,
+          123.137
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835966,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835967,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          268.147,
+          109.999
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835967,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835968,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          252.961,
+          115.875
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835968,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835976,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          159.727,
+          107.636
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835976,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835977,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.873,
+          92.465
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835977,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835978,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.132,
+          10.052
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835978,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835979,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.659,
+          8.175
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835979,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835980,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.674,
+          3.054
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835980,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835981,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.996,
+          22.758
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835981,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835982,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.93,
+          22.136
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835982,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10312835983,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.933,
+          16.182
+        ]
+      },
+      "properties": {
+        "osm_id": 10312835983,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10655460090,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.57,
+          9.074
+        ]
+      },
+      "properties": {
+        "osm_id": 10655460090,
+        "name": null,
+        "category": "fitness_station"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10856027435,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          385.717,
+          11.93
+        ]
+      },
+      "properties": {
+        "osm_id": 10856027435,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10856036132,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          389.505,
+          13.418
+        ]
+      },
+      "properties": {
+        "osm_id": 10856036132,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10929589781,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          363.997,
+          -243.541
+        ]
+      },
+      "properties": {
+        "osm_id": 10929589781,
+        "name": null,
+        "category": "parking_entrance"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10937770577,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.478,
+          -148.223
+        ]
+      },
+      "properties": {
+        "osm_id": 10937770577,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10937770578,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.759,
+          -178.156
+        ]
+      },
+      "properties": {
+        "osm_id": 10937770578,
+        "name": null,
+        "category": "vending_machine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10937793525,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          481.053,
+          -455.37
+        ]
+      },
+      "properties": {
+        "osm_id": 10937793525,
+        "name": "Museo delle Civilt\u00e0",
+        "category": "museum"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10970827157,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -22.664,
+          424.565
+        ]
+      },
+      "properties": {
+        "osm_id": 10970827157,
+        "name": "Tazio Nuvolari",
+        "category": "artwork"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11078670960,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.307,
+          196.016
+        ]
+      },
+      "properties": {
+        "osm_id": 11078670960,
+        "name": "Il vascello della Rivoluzione",
+        "category": "artwork"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11078670961,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.853,
+          192.75
+        ]
+      },
+      "properties": {
+        "osm_id": 11078670961,
+        "name": "Il vascello della Rivoluzione",
+        "category": "artwork"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11078670962,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.115,
+          198.948
+        ]
+      },
+      "properties": {
+        "osm_id": 11078670962,
+        "name": "Il vascello della Rivoluzione",
+        "category": "artwork"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11409567803,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -158.77,
+          427.273
+        ]
+      },
+      "properties": {
+        "osm_id": 11409567803,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12330965314,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          363.966,
+          -26.111
+        ]
+      },
+      "properties": {
+        "osm_id": 12330965314,
+        "name": null,
+        "category": "photo_booth"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12330966545,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          385.243,
+          3.622
+        ]
+      },
+      "properties": {
+        "osm_id": 12330966545,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12330971236,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          377.751,
+          31.867
+        ]
+      },
+      "properties": {
+        "osm_id": 12330971236,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12330972418,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          300.579,
+          116.573
+        ]
+      },
+      "properties": {
+        "osm_id": 12330972418,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12330973491,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          353.91,
+          220.043
+        ]
+      },
+      "properties": {
+        "osm_id": 12330973491,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12330977767,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          454.475,
+          127.327
+        ]
+      },
+      "properties": {
+        "osm_id": 12330977767,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12330989792,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          378.773,
+          33.555
+        ]
+      },
+      "properties": {
+        "osm_id": 12330989792,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12334051763,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          362.014,
+          -19.491
+        ]
+      },
+      "properties": {
+        "osm_id": 12334051763,
+        "name": null,
+        "category": "drinking_water"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13294610665,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.103,
+          -117.734
+        ]
+      },
+      "properties": {
+        "osm_id": 13294610665,
+        "name": null,
+        "category": "waste_basket"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13339237964,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -353.146,
+          -109.99
+        ]
+      },
+      "properties": {
+        "osm_id": 13339237964,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13339237968,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -319.61,
+          -109.222
+        ]
+      },
+      "properties": {
+        "osm_id": 13339237968,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13339237970,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -331.257,
+          -106.102
+        ]
+      },
+      "properties": {
+        "osm_id": 13339237970,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13339237971,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -322.17,
+          -84.132
+        ]
+      },
+      "properties": {
+        "osm_id": 13339237971,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13339237972,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -312.757,
+          -86.741
+        ]
+      },
+      "properties": {
+        "osm_id": 13339237972,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13339237974,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -299.44,
+          -105.556
+        ]
+      },
+      "properties": {
+        "osm_id": 13339237974,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13339237989,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -393.204,
+          -93.41
+        ]
+      },
+      "properties": {
+        "osm_id": 13339237989,
+        "name": null,
+        "category": "bench"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13614844037,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          444.626,
+          -216.922
+        ]
+      },
+      "properties": {
+        "osm_id": 13614844037,
+        "name": "The Green",
+        "category": "restaurant"
       }
     }
   ]
