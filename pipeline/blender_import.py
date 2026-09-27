@@ -227,6 +227,97 @@ def process_areas(data_dir, layer_name, collection_name, material, z_offset):
     print(f"[blender_import] {collection_name} generati: {count}")
 
 
+def collect_vertices(data_dir, layer_name, is_road, default_width):
+    """Ritorna TUTTI i punti (non solo gli estremi) di ogni LineString del
+    layer, con la relativa larghezza e l'id della strada di provenienza.
+
+    Serve controllare ogni vertice, non solo primo/ultimo: in OpenStreetMap
+    una strada spesso attraversa un incrocio senza essere divisa in due
+    tronconi separati, quindi il nodo condiviso con un'altra via puo'
+    trovarsi a meta' della lista di coordinate (es. un vicolo che finisce a
+    "T" dentro una strada principale continua)."""
+    fc = load_layer(data_dir, layer_name)
+    vertices = []
+    for feature in fc["features"]:
+        geom = feature["geometry"]
+        if geom["type"] != "LineString":
+            continue
+        coords = geom["coordinates"]
+        if len(coords) < 2:
+            continue
+        width = feature["properties"].get("width_m") or default_width
+        way_id = feature.get("id")
+        for pt in coords:
+            vertices.append((tuple(pt), width, is_road, way_id))
+    return vertices
+
+
+def build_junctions(data_dir, materials, z_offset=0.035, round_to=0.05, min_ways=2):
+    """Genera un piccolo disco piatto in ogni punto dove 2+ strade/sentieri
+    DIVERSI condividono un nodo, per coprire visivamente la giunzione: le
+    ribbon (vedi build_line_ribbon) finiscono con un taglio netto, quindi
+    agli incroci ad angolo lasciano una fessura a cuneo. Un disco delle
+    dimensioni adeguate centrato sul nodo copre la fessura senza dover
+    calcolare raccordi (miter) geometricamente esatti - approccio semplice
+    ma efficace, comune nei generatori di strade procedurali "leggeri".
+
+    Soglia di raggruppamento molto stretta (5 cm di default): due strade che
+    si toccano davvero in OSM condividono lo stesso nodo, quindi le stesse
+    identiche coordinate dopo la conversione in metri locali (stesso
+    lat/lon, stessa trasformazione deterministica). Non serve una tolleranza
+    larga - anzi andrebbe a creare incroci "falsi" tra strade semplicemente
+    vicine ma non collegate topologicamente (es. un marciapiede parallelo a
+    una strada, a un paio di metri di distanza)."""
+    coll = get_or_create_collection("Junctions")
+
+    vertices = []
+    vertices.extend(collect_vertices(data_dir, "roads", True, 6.0))
+    vertices.extend(collect_vertices(data_dir, "paths", False, 2.0))
+
+    groups = {}
+    for (x, z), width, is_road, way_id in vertices:
+        key = (round(x / round_to) * round_to, round(z / round_to) * round_to)
+        groups.setdefault(key, []).append((width, is_road, way_id))
+
+    count = 0
+    for (x, z), entries in groups.items():
+        # Richiede almeno min_ways vie DIVERSE nello stesso punto: una
+        # singola via con due vertici ravvicinati (curva stretta) non deve
+        # generare un incrocio.
+        distinct_ways = {way_id for _, _, way_id in entries}
+        if len(distinct_ways) < min_ways:
+            continue
+        max_width = max(w for w, _, _ in entries)
+        any_road = any(is_road for _, is_road, _ in entries)
+        radius = max_width / 2.0 + 0.3
+        material = materials["road"] if any_road else materials["path"]
+        _build_circle_patch(f"junction_{count}", x, z, radius, z_offset, coll, material)
+        count += 1
+
+    print(f"[blender_import] Incroci generati: {count}")
+
+
+def _build_circle_patch(name, x, z, radius, z_offset, collection, material, segments=12):
+    bm = bmesh.new()
+    bmesh.ops.create_circle(bm, cap_ends=True, radius=radius, segments=segments)
+    # create_circle genera il cerchio piatto sul piano XY di Blender
+    # (normale lungo Z) attorno all'origine locale: lo spostiamo nel punto
+    # giusto usando la stessa convenzione assi di to_blender_xy (vedi in
+    # cima al file).
+    bx, by = to_blender_xy(x, z)
+    bmesh.ops.translate(bm, vec=(bx, by, z_offset), verts=bm.verts[:])
+
+    mesh = bpy.data.meshes.new(name)
+    bm.to_mesh(mesh)
+    bm.free()
+
+    obj = bpy.data.objects.new(name, mesh)
+    collection.objects.link(obj)
+    if material:
+        obj.data.materials.append(material)
+    return obj
+
+
 def build_ground_plane(size_m, material):
     coll = get_or_create_collection("Terrain")
     bpy.ops.mesh.primitive_plane_add(size=size_m, location=(0, 0, -0.05))
@@ -260,6 +351,7 @@ def main():
     process_buildings(data_dir, materials)
     process_lines(data_dir, "roads", "Roads", materials["road"], default_width=6.0, z_offset=0.02)
     process_lines(data_dir, "paths", "Paths", materials["path"], default_width=2.0, z_offset=0.03)
+    build_junctions(data_dir, materials)
     process_areas(data_dir, "water", "Water", materials["water"], z_offset=0.05)
     process_areas(data_dir, "green", "Green", materials["green"], z_offset=0.01)
 

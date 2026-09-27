@@ -11,6 +11,7 @@ extends Node3D
 const WORLD_GLB_PATH := "res://assets/generated/eur_world.glb"
 const PLAYER_SCENE_PATH := "res://scenes/player/player.tscn"
 const VEGETATION_SCRIPT_PATH := "res://scripts/systems/vegetation_scatter.gd"
+const STREET_HUD_SCRIPT_PATH := "res://scripts/systems/street_hud.gd"
 const WATER_GEOJSON_PATH := "res://data/osm/water.geojson"
 const BUILDINGS_GEOJSON_PATH := "res://data/osm/buildings.geojson"
 
@@ -33,7 +34,8 @@ func _ready() -> void:
 	_load_generated_world()
 	_spawn_vegetation()
 	spawn_position = _find_safe_spawn_point()
-	_spawn_player()
+	var player := _spawn_player()
+	_spawn_street_hud(player)
 
 
 func _setup_environment() -> void:
@@ -174,8 +176,17 @@ func _spawn_vegetation() -> void:
 	add_child(vegetation)
 
 
-func _spawn_player() -> void:
+func _spawn_player() -> Node3D:
 	var player_scene: PackedScene = load(PLAYER_SCENE_PATH)
 	var player := player_scene.instantiate()
 	player.position = spawn_position
 	add_child(player)
+	return player
+
+
+func _spawn_street_hud(player: Node3D) -> void:
+	var hud_script := load(STREET_HUD_SCRIPT_PATH)
+	var hud: Node = hud_script.new()
+	hud.name = "StreetHud"
+	add_child(hud)
+	hud.setup(player)
