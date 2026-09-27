@@ -12,6 +12,13 @@ const WORLD_GLB_PATH := "res://assets/generated/eur_world.glb"
 const PLAYER_SCENE_PATH := "res://scenes/player/player.tscn"
 const VEGETATION_SCRIPT_PATH := "res://scripts/systems/vegetation_scatter.gd"
 
+# Solo questi prefissi di nome ricevono collisione fisica: edifici e terreno.
+# Strade/sentieri/acqua/aree verdi restano puramente visivi (il terreno sotto
+# di loro fornisce gia' la superficie calpestabile) - averli tutti solidi
+# causava sovrapposizioni di collisioni vicino al lago che incastravano il
+# giocatore impedendogli di muoversi.
+const COLLIDABLE_PREFIXES := ["building_", "ground"]
+
 @export var spawn_position: Vector3 = Vector3(0, 1.0, 10.0)
 
 
@@ -73,13 +80,17 @@ func _load_generated_world() -> void:
 
 
 func _add_static_collisions(node: Node) -> void:
-	# Aggiunge collisioni statiche (trimesh) a ogni mesh generata dalla
-	# pipeline (terreno, edifici, strade...), cosi' il giocatore ci
-	# cammina/scontra sopra senza dover pre-calcolare collider in Blender.
 	for child in node.get_children():
-		if child is MeshInstance3D:
+		if child is MeshInstance3D and _is_collidable(child.name):
 			child.create_trimesh_collision()
 		_add_static_collisions(child)
+
+
+func _is_collidable(node_name: String) -> bool:
+	for prefix in COLLIDABLE_PREFIXES:
+		if node_name.begins_with(prefix):
+			return true
+	return false
 
 
 func _spawn_vegetation() -> void:
