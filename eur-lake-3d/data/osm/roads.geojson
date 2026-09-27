@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "local-meters",
+    "note": "coordinate [x, z] in metri, vedi coords.py"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 2001,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            24.922,
+            66.642
+          ],
+          [
+            24.922,
+            22.214
+          ],
+          [
+            24.922,
+            -22.214
+          ],
+          [
+            24.922,
+            -66.642
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 2001,
+        "name": "Via di Prova",
+        "highway": "residential",
+        "lanes": "2",
+        "width_m": 6.5,
+        "surface": "asphalt",
+        "maxspeed": null
+      }
+    }
+  ]
+}

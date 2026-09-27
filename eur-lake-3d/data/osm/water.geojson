@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "local-meters",
+    "note": "coordinate [x, z] in metri, vedi coords.py"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 3001,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -33.229,
+              -33.321
+            ],
+            [
+              0.0,
+              -44.428
+            ],
+            [
+              33.229,
+              -33.321
+            ],
+            [
+              16.615,
+              33.321
+            ],
+            [
+              -16.615,
+              44.428
+            ],
+            [
+              -33.229,
+              -33.321
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 3001,
+        "name": "Laghetto dell'EUR",
+        "kind": "water",
+        "natural": "water",
+        "leisure": null,
+        "landuse": null
+      }
+    }
+  ]
+}

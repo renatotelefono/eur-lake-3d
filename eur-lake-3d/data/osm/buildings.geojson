@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "local-meters",
+    "note": "coordinate [x, z] in metri, vedi coords.py"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1001,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              49.843,
+              -44.428
+            ],
+            [
+              66.458,
+              -44.428
+            ],
+            [
+              66.458,
+              -61.089
+            ],
+            [
+              49.843,
+              -61.089
+            ],
+            [
+              49.843,
+              -44.428
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1001,
+        "name": "Edificio di test",
+        "building": "yes",
+        "height_m": 12.0,
+        "levels": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1002,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -49.844,
+              44.428
+            ],
+            [
+              -37.383,
+              44.428
+            ],
+            [
+              -37.383,
+              55.535
+            ],
+            [
+              -49.844,
+              55.535
+            ],
+            [
+              -49.844,
+              44.428
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1002,
+        "name": null,
+        "building": "residential",
+        "height_m": 12.0,
+        "levels": "4"
+      }
+    }
+  ]
+}

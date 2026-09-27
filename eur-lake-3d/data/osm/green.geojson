@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "local-meters",
+    "note": "coordinate [x, z] in metri, vedi coords.py"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 4001,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -66.458,
+              -88.856
+            ],
+            [
+              -24.922,
+              -99.963
+            ],
+            [
+              -16.614,
+              -66.642
+            ],
+            [
+              -58.151,
+              -55.535
+            ],
+            [
+              -66.458,
+              -88.856
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 4001,
+        "name": "Parco Centrale del Lago",
+        "kind": "green",
+        "natural": null,
+        "leisure": "park",
+        "landuse": null
+      }
+    }
+  ]
+}

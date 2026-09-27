@@ -1,0 +1,40 @@
+{
+  "_comment": "Configurazione dell'area di gioco 'Laghetto dell'EUR'. Il punto origin diventa (0,0,0) nel mondo Godot. Fonte coordinate: Turismo Roma (turismoroma.it), Parco Centrale del Lago / Laghetto dell'EUR, Passeggiata del Giappone.",
+  "area_id": "eur_laghetto",
+  "display_name": "Laghetto dell'EUR",
+  "origin": {
+    "lat": 41.828447,
+    "lon": 12.466024
+  },
+  "bbox_half_size_m": 500,
+  "projection": {
+    "type": "azimuthal_equidistant",
+    "note": "Proiezione locale centrata su 'origin', cosi' le distanze in metri dal centro sono accurate entro l'area di gioco. Non usare mai lat/lon grezzi come coordinate mondo."
+  },
+  "axis_convention": {
+    "x": "est (+X = verso est)",
+    "z": "-nord (+Z = verso sud, -Z = verso nord, coerente con la convenzione 'forward = -Z' di Godot)",
+    "y": "quota verticale (su)"
+  },
+  "building_defaults": {
+    "default_height_m": 9.0,
+    "height_per_level_m": 3.0
+  },
+  "road_defaults": {
+    "default_width_m": 6.0,
+    "width_per_lane_m": 3.25,
+    "footway_width_m": 2.0
+  },
+  "vegetation": {
+    "trees_per_100sqm": 1.2,
+    "min_tree_spacing_m": 3.0
+  },
+  "overpass": {
+    "primary_endpoint": "https://overpass-api.de/api/interpreter",
+    "fallback_endpoints": [
+      "https://overpass.kumi.systems/api/interpreter",
+      "https://overpass.openstreetmap.ru/api/interpreter"
+    ],
+    "note": "Questo sandbox cloud non puo' raggiungere questi host per policy di rete dell'organizzazione. Eseguire pipeline/fetch_osm.py da un ambiente con accesso internet normale (il tuo computer)."
+  }
+}

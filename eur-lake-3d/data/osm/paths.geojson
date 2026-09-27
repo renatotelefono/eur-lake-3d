@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "local-meters",
+    "note": "coordinate [x, z] in metri, vedi coords.py"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 2002,
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -41.536,
+            -55.535
+          ],
+          [
+            0.0,
+            -33.321
+          ],
+          [
+            41.536,
+            -55.535
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 2002,
+        "name": "Passeggiata del Giappone",
+        "highway": "footway",
+        "lanes": null,
+        "width_m": 2.0,
+        "surface": null,
+        "maxspeed": null
+      }
+    }
+  ]
+}

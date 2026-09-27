@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "local-meters",
+    "note": "coordinate [x, z] in metri, vedi coords.py"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": 5001,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.307,
+          -11.107
+        ]
+      },
+      "properties": {
+        "osm_id": 5001,
+        "name": "Bar del Laghetto",
+        "category": "cafe"
+      }
+    }
+  ]
+}
