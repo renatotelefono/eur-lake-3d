@@ -11,6 +11,8 @@ extends Node3D
 const WORLD_GLB_PATH := "res://assets/generated/eur_world.glb"
 const PLAYER_SCENE_PATH := "res://scenes/player/player.tscn"
 const VEGETATION_SCRIPT_PATH := "res://scripts/systems/vegetation_scatter.gd"
+const WATER_GEOJSON_PATH := "res://data/osm/water.geojson"
+const BUILDINGS_GEOJSON_PATH := "res://data/osm/buildings.geojson"
 
 # Solo questi prefissi di nome ricevono collisione fisica: edifici e terreno.
 # Strade/sentieri/acqua/aree verdi restano puramente visivi (il terreno sotto
@@ -19,6 +21,10 @@ const VEGETATION_SCRIPT_PATH := "res://scripts/systems/vegetation_scatter.gd"
 # giocatore impedendogli di muoversi.
 const COLLIDABLE_PREFIXES := ["building_", "ground"]
 
+# Punto di partenza "preferito" (vicino al centro/origine dell'area). Se
+# cade dentro l'acqua o dentro un edificio, _find_safe_spawn_point() cerca
+# automaticamente il punto libero piu' vicino, cosi' non serve aggiustarlo
+# a mano ogni volta che si scaricano dati OSM diversi/aggiornati.
 @export var spawn_position: Vector3 = Vector3(0, 1.0, 10.0)
 
 
@@ -26,6 +32,7 @@ func _ready() -> void:
 	_setup_environment()
 	_load_generated_world()
 	_spawn_vegetation()
+	spawn_position = _find_safe_spawn_point()
 	_spawn_player()
 
 
@@ -91,6 +98,73 @@ func _is_collidable(node_name: String) -> bool:
 		if node_name.begins_with(prefix):
 			return true
 	return false
+
+
+func _find_safe_spawn_point() -> Vector3:
+	# Cerca un punto di spawn che non cada dentro l'acqua o dentro un
+	# edificio, partendo dal punto preferito (spawn_position) e allargando
+	# la ricerca a cerchi concentrici. Se i GeoJSON non sono disponibili
+	# (es. pipeline non ancora eseguita), usa semplicemente il default.
+	var water_polys := _load_polygons(WATER_GEOJSON_PATH)
+	var building_polys := _load_polygons(BUILDINGS_GEOJSON_PATH)
+
+	if water_polys.is_empty() and building_polys.is_empty():
+		return spawn_position
+
+	var start := Vector2(spawn_position.x, spawn_position.z)
+	for candidate in _spiral_candidates(start, 3.0, 16, 300.0):
+		if _point_is_free(candidate, water_polys) and _point_is_free(candidate, building_polys):
+			return Vector3(candidate.x, spawn_position.y, candidate.y)
+
+	var msg := "world.gd: nessun punto di spawn libero trovato entro il raggio "
+	msg += "di ricerca, uso il default."
+	push_warning(msg)
+	return spawn_position
+
+
+func _load_polygons(path: String) -> Array:
+	var polygons: Array = []
+	if not FileAccess.file_exists(path):
+		return polygons
+
+	var f := FileAccess.open(path, FileAccess.READ)
+	var text := f.get_as_text()
+	f.close()
+
+	var data = JSON.parse_string(text)
+	if data == null or typeof(data) != TYPE_DICTIONARY or not data.has("features"):
+		return polygons
+
+	for feature in data["features"]:
+		var geometry: Dictionary = feature.get("geometry", {})
+		if geometry.get("type") != "Polygon":
+			continue
+		var ring: Array = geometry["coordinates"][0]
+		var poly := PackedVector2Array()
+		for pt in ring:
+			poly.append(Vector2(pt[0], pt[1]))
+		if poly.size() >= 3:
+			polygons.append(poly)
+
+	return polygons
+
+
+func _point_is_free(point: Vector2, polygons: Array) -> bool:
+	for poly in polygons:
+		if Geometry2D.is_point_in_polygon(point, poly):
+			return false
+	return true
+
+
+func _spiral_candidates(center: Vector2, step: float, per_ring: int, max_radius: float) -> Array:
+	var points: Array = [center]
+	var radius := step
+	while radius <= max_radius:
+		for i in per_ring:
+			var angle := (TAU / per_ring) * i
+			points.append(center + Vector2(cos(angle), sin(angle)) * radius)
+		radius += step
+	return points
 
 
 func _spawn_vegetation() -> void:
