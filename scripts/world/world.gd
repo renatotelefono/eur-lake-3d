@@ -12,6 +12,7 @@ const WORLD_GLB_PATH := "res://assets/generated/eur_world.glb"
 const PLAYER_SCENE_PATH := "res://scenes/player/player.tscn"
 const VEGETATION_SCRIPT_PATH := "res://scripts/systems/vegetation_scatter.gd"
 const STREET_HUD_SCRIPT_PATH := "res://scripts/systems/street_hud.gd"
+const MINIMAP_SCRIPT_PATH := "res://scripts/systems/minimap.gd"
 const WATER_GEOJSON_PATH := "res://data/osm/water.geojson"
 const BUILDINGS_GEOJSON_PATH := "res://data/osm/buildings.geojson"
 
@@ -20,7 +21,7 @@ const BUILDINGS_GEOJSON_PATH := "res://data/osm/buildings.geojson"
 # di loro fornisce gia' la superficie calpestabile) - averli tutti solidi
 # causava sovrapposizioni di collisioni vicino al lago che incastravano il
 # giocatore impedendogli di muoversi.
-const COLLIDABLE_PREFIXES := ["building_", "ground"]
+const COLLIDABLE_PREFIXES := ["building_", "ground","curb_"]
 
 # Punto di partenza "preferito" (vicino al centro/origine dell'area). Se
 # cade dentro l'acqua o dentro un edificio, _find_safe_spawn_point() cerca
@@ -36,6 +37,7 @@ func _ready() -> void:
 	spawn_position = _find_safe_spawn_point()
 	var player := _spawn_player()
 	_spawn_street_hud(player)
+	_spawn_minimap(player)
 
 
 func _setup_environment() -> void:
@@ -59,7 +61,13 @@ func _setup_environment() -> void:
 	env.background_mode = Environment.BG_SKY
 	env.sky = sky
 	env.ambient_light_source = Environment.AMBIENT_SOURCE_SKY
-	env.ambient_light_sky_contribution = 1.0
+	# Con contributo 1.0 la luce ambientale (azzurrina, dal cielo) copriva i
+	# colori dei materiali (strada/sentiero/terreno finivano tutti per
+	# sembrare dello stesso grigio-azzurro pallido). Abbassandolo, la luce
+	# diretta del sole (bianca, direzionale) pesa di piu' e i colori dei
+	# materiali si distinguono meglio, con ombre piu' leggibili.
+	env.ambient_light_sky_contribution = 0.5
+	env.ambient_light_energy = 0.8
 	env.tonemap_mode = Environment.TONE_MAPPER_FILMIC
 
 	var world_env := WorldEnvironment.new()
@@ -190,3 +198,19 @@ func _spawn_street_hud(player: Node3D) -> void:
 	hud.name = "StreetHud"
 	add_child(hud)
 	hud.setup(player)
+
+
+func _spawn_minimap(player: Node3D) -> void:
+	# La minimappa e' un Control (usa _draw()): la incapsuliamo in un
+	# CanvasLayer dedicato, come per StreetHud, cosi' resta un overlay
+	# 2D fisso sullo schermo indipendente dalla telecamera 3D.
+	var layer := CanvasLayer.new()
+	layer.name = "MinimapLayer"
+	layer.layer = 10
+	add_child(layer)
+
+	var minimap_script := load(MINIMAP_SCRIPT_PATH)
+	var minimap: Control = minimap_script.new()
+	minimap.name = "Minimap"
+	layer.add_child(minimap)
+	minimap.setup(player)

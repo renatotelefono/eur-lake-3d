@@ -135,10 +135,24 @@ def build_polygon_mesh(name, ring_xz, collection, material, extrude_height=0.0, 
     return obj
 
 
-def build_line_ribbon(name, line_xz, width_m, collection, material, z_offset=0.0):
+def build_line_ribbon(
+    name, line_xz, width_m, collection, material,
+    z_offset=0.0, centerline_offset=0.0, extrude_height=0.0,
+):
     """Crea una ribbon mesh (nastro) lungo una linea, larga width_m, per
     rappresentare strade/sentieri. Giunzioni semplici (nessun miter
-    elaborato agli angoli): sufficiente per l'MVP, migliorabile in seguito."""
+    elaborato agli angoli): sufficiente per l'MVP, migliorabile in seguito.
+
+    centerline_offset sposta lateralmente il nastro rispetto alla linea
+    originale (positivo = a sinistra rispetto alla direzione di percorrenza):
+    usato per generare i cordoli (vedi build_road_curbs), che sono nastri
+    sottili "agganciati" al bordo della strada invece che centrati sulla
+    linea originale.
+
+    extrude_height, se > 0, trasforma il nastro piatto in un muretto solido
+    (estruso verso l'alto di quella altezza) invece di una semplice striscia
+    dipinta sul terreno: usato per i cordoli quando devono essere un vero
+    ostacolo fisico da scavalcare con un salto, non solo un segnale visivo."""
     if len(line_xz) < 2:
         return None
 
@@ -154,19 +168,32 @@ def build_line_ribbon(name, line_xz, width_m, collection, material, z_offset=0.0
         else:
             direction = safe_normalized((points[i + 1] - points[i]) + (points[i] - points[i - 1]))
         normal = safe_normalized(Vector((-direction.y, direction.x, 0.0)))
-        left_pts.append(p + normal * half_w)
-        right_pts.append(p - normal * half_w)
+        center = p + normal * centerline_offset
+        left_pts.append(center + normal * half_w)
+        right_pts.append(center - normal * half_w)
 
     bm = bmesh.new()
     left_verts = [bm.verts.new(p) for p in left_pts]
     right_verts = [bm.verts.new(p) for p in right_pts]
     bm.verts.ensure_lookup_table()
 
+    faces = []
     for i in range(len(points) - 1):
         try:
-            bm.faces.new((left_verts[i], left_verts[i + 1], right_verts[i + 1], right_verts[i]))
+            face = bm.faces.new((left_verts[i], left_verts[i + 1], right_verts[i + 1], right_verts[i]))
+            faces.append(face)
         except ValueError:
             continue
+
+    if extrude_height > 0 and faces:
+        # Estrudendo l'intera striscia di facce verso l'alto si ottengono
+        # automaticamente anche le pareti laterali lungo tutto il bordo
+        # (stesso meccanismo usato per estrudere gli edifici in
+        # build_polygon_mesh), quindi il nastro piatto diventa un muretto
+        # solido con collisione, non solo una "scatola" superiore.
+        ret = bmesh.ops.extrude_face_region(bm, geom=faces)
+        extruded_verts = [v for v in ret["geom"] if isinstance(v, bmesh.types.BMVert)]
+        bmesh.ops.translate(bm, vec=(0, 0, extrude_height), verts=extruded_verts)
 
     bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
 
@@ -225,6 +252,42 @@ def process_areas(data_dir, layer_name, collection_name, material, z_offset):
         if obj:
             count += 1
     print(f"[blender_import] {collection_name} generati: {count}")
+
+
+def build_road_curbs(
+    data_dir, layer_name, material, road_z_offset,
+    curb_width=0.3, curb_height=0.35,
+):
+    """Genera due muretti bassi (cordoli) lungo entrambi i bordi di ogni
+    strada del layer, a cavallo del bordo stesso (meta' sopra l'asfalto,
+    meta' sul terreno esterno).
+
+    Non sono solo un segnale visivo di dove finisce la carreggiata: sono
+    muretti solidi con collisione (vedi COLLIDABLE_PREFIXES in world.gd,
+    che include "curb_"), alti curb_height - abbastanza bassi da poterli
+    scavalcare con un salto normale, ma abbastanza alti da bloccare
+    camminando: per passare da strada a marciapiede (o viceversa) bisogna
+    saltare, come un vero cordolo."""
+    coll = get_or_create_collection(f"{layer_name}Curbs")
+    fc = load_layer(data_dir, layer_name)
+    count = 0
+    for i, feature in enumerate(fc["features"]):
+        geom = feature["geometry"]
+        if geom["type"] != "LineString":
+            continue
+        width = feature["properties"].get("width_m") or 6.0
+        half_w = width / 2.0
+        for side, sign in (("l", 1.0), ("r", -1.0)):
+            name = f"curb_{layer_name}_{feature.get('id', i)}_{side}"
+            obj = build_line_ribbon(
+                name, geom["coordinates"], curb_width, coll, material,
+                z_offset=road_z_offset,
+                centerline_offset=sign * half_w,
+                extrude_height=curb_height,
+            )
+            if obj:
+                count += 1
+    print(f"[blender_import] Cordoli generati: {count}")
 
 
 def collect_vertices(data_dir, layer_name, is_road, default_width):
@@ -340,17 +403,19 @@ def main():
 
     materials = {
         "building": make_material("mat_building", (0.72, 0.70, 0.66)),
-        "road": make_material("mat_road", (0.12, 0.12, 0.13)),
-        "path": make_material("mat_path", (0.55, 0.50, 0.42)),
+        "road": make_material("mat_road", (0.08, 0.08, 0.09)),
+        "path": make_material("mat_path", (0.62, 0.46, 0.28)),
+        "curb": make_material("mat_curb", (0.92, 0.92, 0.86)),
         "water": make_material("mat_water", (0.10, 0.35, 0.55), alpha=0.75),
         "green": make_material("mat_green", (0.20, 0.45, 0.18)),
-        "ground": make_material("mat_ground", (0.35, 0.33, 0.28)),
+        "ground": make_material("mat_ground", (0.46, 0.42, 0.30)),
     }
 
-    build_ground_plane(1100, materials["ground"])
+    build_ground_plane(2200, materials["ground"])
     process_buildings(data_dir, materials)
     process_lines(data_dir, "roads", "Roads", materials["road"], default_width=6.0, z_offset=0.02)
     process_lines(data_dir, "paths", "Paths", materials["path"], default_width=2.0, z_offset=0.03)
+    build_road_curbs(data_dir, "roads", materials["curb"], road_z_offset=0.02)
     build_junctions(data_dir, materials)
     process_areas(data_dir, "water", "Water", materials["water"], z_offset=0.05)
     process_areas(data_dir, "green", "Green", materials["green"], z_offset=0.01)

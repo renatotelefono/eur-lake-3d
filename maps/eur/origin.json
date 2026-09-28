@@ -6,7 +6,7 @@
     "lat": 41.828447,
     "lon": 12.466024
   },
-  "bbox_half_size_m": 500,
+  "bbox_half_size_m": 1000,
   "projection": {
     "type": "azimuthal_equidistant",
     "note": "Proiezione locale centrata su 'origin', cosi' le distanze in metri dal centro sono accurate entro l'area di gioco. Non usare mai lat/lon grezzi come coordinate mondo."
